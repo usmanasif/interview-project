@@ -1,0 +1,7 @@
+web:
+  build: .
+  volumes:
+    - .:/app
+  command: ruby app.rb
+  ports:
+    - "8080:8080"
