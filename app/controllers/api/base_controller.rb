@@ -1,5 +1,6 @@
 module Api
   class BaseController < Sinatra::Base
+    register Sinatra::ActiveRecordExtension
 
     before do
       content_type 'application/json'
