@@ -4,6 +4,7 @@ gem 'sinatra'
 gem 'sinatra-contrib'
 gem 'httparty'
 gem 'rake'
+gem 'rack'
 
 # datavbase ORM
 gem 'activerecord'

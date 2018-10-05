@@ -91,6 +91,7 @@ DEPENDENCIES
   activerecord
   httparty
   pry
+  rack
   rack-test
   rake
   rspec
