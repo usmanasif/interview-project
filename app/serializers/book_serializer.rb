@@ -9,8 +9,7 @@ class BookSerializer
       title: @book.title,
       authors: @book.authors.pluck(:name).join(", "),
       number_of_authors: @book.authors.count,
-      isbn: @book.isbn,
-      published_at: @book.published_at
+      isbn: @book.isbn
     }
     data[:errors] = @book.errors.full_messages if @book.errors.any?
     data

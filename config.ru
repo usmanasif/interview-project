@@ -10,6 +10,8 @@ Dir[File.join('app/helpers', '**/*._helper.rb')].each { |file| require File.expa
 Dir[File.join('app/controllers', '**/*_controller.rb')].each { |file| require File.expand_path(file) }
 Dir[File.join('app/models', '**/*.rb')].each { |file| require File.expand_path(file) }
 
+use Api::V1::BooksController
+use Api::V1::AuthorsController
+
+use Rack::MethodOverride
 run Api::BaseController
-run Api::V1::BooksController
-run Api::V1::AuthorsController
