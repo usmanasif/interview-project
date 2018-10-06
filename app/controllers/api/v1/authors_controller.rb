@@ -1,5 +1,6 @@
 Dir[File.join('app/controllers', '**/base_controller.rb')].each { |file| require File.expand_path(file) }
 Dir[File.join('app/serializers', '**/author_serializer.rb')].each { |file| require File.expand_path(file) }
+
 module Api
   module V1
     class AuthorsController < Api::BaseController

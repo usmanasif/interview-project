@@ -16,4 +16,8 @@ group :test, :development do
   gem 'rack-test'
   gem 'pry'
   gem 'tux'
+  gem 'factory_bot'
+  gem 'database_cleaner'
+  gem 'shoulda-matchers', '4.0.0.rc1'
+  gem 'faker'
 end
